@@ -1,0 +1,34 @@
+MON TUTO GIT
+
+liste les fichiers
+ls
+
+git add .
+
+git status
+
+git commit -a -m "message"
+git commit -am "message"
+
+se place sur une version 
+git checkout +SHA
+
+se placer sur la derniere version
+git checkout master
+
+récupérer tout le code d'un projet depuis le début
+git clone
+
+envoyer du code en ligne
+git remote
+
+cat AUTHOURS
+
+envoyer du code vers github
+git push origin master 
+
+récupérer du code vers github 
+git pull origin master
+
+
+
