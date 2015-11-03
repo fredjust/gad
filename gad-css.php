@@ -1,6 +1,6 @@
 <?php
 
-// test github
+// test git Gui
 
 function couleur($couleur,$facteur) {
 	$R=hexdec(substr($couleur, 0, 2));

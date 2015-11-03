@@ -1,5 +1,8 @@
 MON TUTO GIT
 
+git config --global user.name "fredjust"
+git config --global user.email "fredjust@gmail.com"
+
 liste les fichiers
 ls
 
