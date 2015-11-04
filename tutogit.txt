@@ -1,4 +1,4 @@
-MON TUTO GIT
+﻿MON TUTO GIT
 
 git config --global user.name "fredjust"
 git config --global user.email "fredjust@gmail.com"
@@ -6,6 +6,7 @@ git config --global user.email "fredjust@gmail.com"
 liste les fichiers
 ls
 
+ajoute tous les fichier
 git add .
 
 git status
@@ -32,6 +33,32 @@ git push origin master
 
 récupérer du code vers github 
 git pull origin master
+
+
+BRANCHE 
+les commits de deux branches sont indépendant
+
+afficher la branche en cours
+git branch
+
+créer une branche
+git branch mon-test
+
+changer de branche
+git checkout mon-test
+
+
+fussioner la branche dans master 
+en etant sur la branche master
+git merge mon-test
+
+
+GIT INGNORE
+fichier .gitignore
+dedans les fichiers a ignorer
+
+
+
 
 
 
