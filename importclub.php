@@ -22,7 +22,8 @@ if (isset($_GET['dev']))  { $dev =$_GET['dev']; $_SESSION["dev"]=$dev; };
 
 /*****************************************************************************/
 function echod($message) {	
-	if ($_SESSION["dev"]==1) {
+	global $dev;
+	if ($dev==1) {
 		echo $message.'<br>';
 	}
 }

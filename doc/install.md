@@ -1,7 +1,12 @@
-# procédure pour l'installation
+# procédure pour l'installation et tests 
 
 ** Récupérer le code  **  
 tout est sur https://github.com/fredjust/gad  
+
+** installer WAMP (ou EasyPHP) **  
+* testé avec succès avec WAMP  
+* créer une base cvoe (ou changer dans _connect.php)
+
 
 ** créer les tables dans la base SQL  **  
 * dans le rep SQL exécuter les fichiers SQL
@@ -17,6 +22,7 @@ tout est sur https://github.com/fredjust/gad
 ** importer une grille **  
 * accéder à l'index du site
 * cliquer sur Dynamiser une grille
-* envoyer la grille GaTest.html
+* envoyer la grille /sample/grillepapi.html
 * parametrer les options et cliquer sur générer la grille
+* envoyer le classement /sample/classementpapi.html
 

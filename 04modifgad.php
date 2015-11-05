@@ -206,7 +206,7 @@ function couleur($couleur,$facteur) {
 	vous pouvez revenir ici pour modifier des options et la regénérer<br>
 	Actualiser alors cette nouvelle fenetre en appuyant sur F5 pour voir vos modifications<br>
 	</i>
-	</td><td>
+	</td><td align=center STYLE="background-color:#<?php echo $rvb1?>">
 		<input type="button" onclick="window.open('05makegad.php?id_t=<?php echo $id_t?>&rvb=<?php echo $row['RVB']?>&force=1','gad','height=500,width=1000,top=100,left=100,location=no');" value="Générer et afficher la grille dynamique"><br>
 	
 	
@@ -215,23 +215,19 @@ function couleur($couleur,$facteur) {
 	<br>
 	<b>INFORMATIONS SUPPLEMENTAIRES EN OPTION</b><br>
 	<hr>
-	<form enctype="multipart/form-data" action="saveclassement.php" method="post">
-		<input type="hidden" name="MAX_FILE_SIZE" value="512000" />
-		<input type="hidden" name="id_t" value="<?php echo $id_t?>" />
-		Si vous voulez afficher les clubs des joueurs, vous pouvez envoyer le fichier HTML du classement pour ce tournoi<br>
-		<br>
-		LE CLASSEMENT : <input name="nomfichier" type="file" />  <input type="submit" value="Importer" /><br>
-	</form>
+
 	
 				<?php
-				$requete_fiche=mysqli_query ($link,"SELECT DISTINCT Club FROM gad_data WHERE ID_T=$id_t ORDER BY Club");
+				$requete_fiche=mysqli_query ($link,"SELECT DISTINCT Club FROM gad_data WHERE ID_T=$id_t AND Club<>'' ORDER BY Club");
 				if ($rowc=mysqli_fetch_array($requete_fiche) ) { 
 					if ($rowc['Club']!='') {
 				?>			
+				Les clubs ont été importés et s'afficheront, <br>
+				
 				<form action="04modifgad.php" method="post">	
 				<input type="hidden" name="id_t" value="<?php echo $id_t?>" />
 				<input type="hidden" name="modif" value="2" />
-					<input type="submit" value="Surligner" /> les joueurs de <SELECT NAME="club">	
+					Je souhaite que les joueurs de <SELECT NAME="club">	
 
 					<?php 
 					$isselect='';
@@ -247,8 +243,17 @@ function couleur($couleur,$facteur) {
 					ECHO ("<OPTION VALUE=\"".$rowc['Club']."\" $isselect>".$rowc['Club']."\n");					
 				}
 				?>					
-			</SELECT>	
+			</SELECT>
+			soient <input type="submit" value="Surligner" /> 
 			
+				</form>
+				
+				<form enctype="multipart/form-data" action="saveclassement.php" method="post">
+					<input type="hidden" name="MAX_FILE_SIZE" value="512000" />
+					<input type="hidden" name="id_t" value="<?php echo $id_t?>" />
+					Si vous voulez afficher les clubs des joueurs, vous pouvez envoyer le fichier HTML du classement pour ce tournoi<br>
+					<br>
+					LE CLASSEMENT : <input name="nomfichier" type="file" />  <input type="submit" value="Importer" /><br>
 				</form>
 	<hr>
 	Afficher les variations du Elo FIDE (en préparation ...)
