@@ -204,7 +204,8 @@ function couleur($couleur,$facteur) {
 	<br><i>
 	Cela ouvrira une nouvelle fenetre avec votre grille<br>
 	vous pouvez revenir ici pour modifier des options et la regénérer<br>
-	Actualiser alors cette nouvelle fenetre en appuyant sur F5 pour voir vos modifications<br>
+	Il peut etre nécessaire d'actualiser cette nouvelle fenetre<br>
+	en appuyant sur F5 pour voir vos modifications<br>
 	</i>
 	</td><td align=center STYLE="background-color:#<?php echo $rvb1?>">
 		<input type="button" onclick="window.open('05makegad.php?id_t=<?php echo $id_t?>&rvb=<?php echo $row['RVB']?>&force=1','gad','height=500,width=1000,top=100,left=100,location=no');" value="Générer et afficher la grille dynamique"><br>
@@ -222,29 +223,32 @@ function couleur($couleur,$facteur) {
 				if ($rowc=mysqli_fetch_array($requete_fiche) ) { 
 					if ($rowc['Club']!='') {
 				?>			
-				Les clubs ont été importés et s'afficheront, <br>
-				
-				<form action="04modifgad.php" method="post">	
-				<input type="hidden" name="id_t" value="<?php echo $id_t?>" />
-				<input type="hidden" name="modif" value="2" />
-					Je souhaite que les joueurs de <SELECT NAME="club">	
-
-					<?php 
-					$isselect='';
-					if ($rowc['Club']==$row['CAS']) {$isselect='SELECTED';};
-					echo "<!--".$row['CAS']."-->";
-					ECHO ("<OPTION VALUE=''>Aucun");					
-					ECHO ("<OPTION VALUE=\"".$rowc['Club']."\" $isselect>".$rowc['Club']."\n");					
+				Les clubs ont été importés et s'afficheront, <br>				
+					<form action="04modifgad.php" method="post">	
+					<input type="hidden" name="id_t" value="<?php echo $id_t?>" />
+					<input type="hidden" name="modif" value="2" />
+						Je souhaite que les joueurs de <SELECT NAME="club">	
+						<?php 
+						$isselect='';
+						if ($rowc['Club']==$row['CAS']) {$isselect='SELECTED';};
+						echo "<!--".$row['CAS']."-->";
+						ECHO ("<OPTION VALUE=''>Aucun");					
+						ECHO ("<OPTION VALUE=\"".$rowc['Club']."\" $isselect>".$rowc['Club']."\n");					
+						
+						while ($rowc=mysqli_fetch_array($requete_fiche) ) {
+							$isselect='';
+							if ($rowc['Club']==$row['CAS']) {$isselect='SELECTED';};
+							ECHO ("<OPTION VALUE=\"".$rowc['Club']."\" $isselect>".$rowc['Club']."\n");					
+						}
+						?> 
+						</SELECT>
+						soient <input type="submit" value="Surligner" /> 
+						<?php 
 					}
 				}
-				while ($rowc=mysqli_fetch_array($requete_fiche) ) {
-					$isselect='';
-					if ($rowc['Club']==$row['CAS']) {$isselect='SELECTED';};
-					ECHO ("<OPTION VALUE=\"".$rowc['Club']."\" $isselect>".$rowc['Club']."\n");					
-				}
 				?>					
-			</SELECT>
-			soient <input type="submit" value="Surligner" /> 
+			
+			
 			
 				</form>
 				
