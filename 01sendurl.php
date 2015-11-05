@@ -23,6 +23,10 @@ if (isset($_GET['dev']))  { $dev =$_GET['dev']; $_SESSION["dev"]=$dev; };
 		
 		Coller l'URL d'une grille américaine en ligne<br>
 		<br>
+		ATTENTION DEPUIS NOVEMBRE 2015<br>
+		LES GRILLES SONT DYNAMIQUES SUR LA SITE DE LA FFE<br>
+		IL N EST PAS POSSIBLE DE LES RE-DYNAMISER PAR CETTE METHODE<br>
+		<br>
 		<input name="url" type="text" size="75"/><br>  
 		<br>
 		<input type="submit" value="Importer la grille" /><br>
