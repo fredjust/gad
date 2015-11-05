@@ -25,7 +25,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- Structure de la table `couleur`
 --
 
-CREATE TABLE IF NOT EXISTS `couleur` (
+CREATE TABLE IF NOT EXISTS `gad_color` (
   `ID_C` int(11) NOT NULL AUTO_INCREMENT,
   `RVB` varchar(6) DEFAULT NULL,
   `NOM` varchar(50) NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `couleur` (
 -- Contenu de la table `couleur`
 --
 
-INSERT INTO `couleur` (`ID_C`, `RVB`, `NOM`, `ORD`) VALUES
+INSERT INTO `gad_color` (`ID_C`, `RVB`, `NOM`, `ORD`) VALUES
 (3, '0000AA', 'Bleu (Min)', 50),
 (5, '1E7FCB', 'Bleu Azur', 0),
 (6, '39548D', 'Bleu FFE', 120),

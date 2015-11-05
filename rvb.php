@@ -50,7 +50,7 @@ $rvb2=couleur($rvb,0.9);
 .gad-cl:hover{background-color: #<?PHP echo $rvb1?>;cursor:default;}
 .gad-fon {font-family:Arial; font-size:8pt; color: #000000; background-color: #<?PHP echo $rvb2?>;}
 .gad-fon:hover{background-color: #<?PHP echo $rvb1?>;cursor:default;}
-.gad-gad-entete {font-family:Arial; font-size:8pt; color: #FFFFFF; background-color: #<?PHP echo $rvb?>; font-weight: bold;}
+.gad-entete {font-family:Arial; font-size:8pt; color: #FFFFFF; background-color: #<?PHP echo $rvb?>; font-weight: bold;}
 .gad-titre {font-family:Arial; font-size:12pt; color: #<?PHP echo $rvb?>; font-weight:bold; height:50px}
 .gad-ss-titre {font-family:Arial; font-size:10pt; color: #000000; background-color: #<?PHP echo $rvb1?>; font-weight: bold;}
 .gad-surligne {font-family:Arial; font-size:8pt; font-weight: bold; color: #000000; background-color: #<?PHP echo $rvb1?>;}
@@ -74,7 +74,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 <br><br><br>
 <div id="gad-cont">
 <table border='0' cellpadding='1' cellspacing='0' bordercolor='#000000'>
-<tr class="gad-gad-entete">
+<tr class="gad-entete">
 	<td>&nbsp;Pl&nbsp;</td>
 	<td>&nbsp;t&nbsp;</td>
 	<td>&nbsp;Nom&nbsp;</td>
@@ -106,7 +106,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 	<center>
 	<table border='0' cellpadding='2' cellspacing='0' bordercolor='#000000'>
 		<tr class="gad-ss-titre">	<td colspan=50 align=center>Clichy-Echecs-92</td></tr>		<tr class="gad-ss-titre">	<td> </td>	<td> </td>	<td> </td>	<td>1</td>	<td>f</td>	<td>RAKOTOMAHARO&nbsp;Fy&nbsp;Antenaina</td>	<td>2330R</td>	<td>CadM</td>	<td>MAD</td>	<td>IDF</td>	<td>8.5</td>	<td>42</td>	<td>2676</td><td></td></tr>
-		<tr class="gad-gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
+		<tr class="gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
 </tr>
 		<tr class="gad-fon"><td > 1 </td><td> &#x25FC; </td><td >Gagn&eacute;</td><td><a title="Clichy-Echecs-92">25</a></td><td><a title="Clichy-Echecs-92">&nbsp;</a></td><td><a title="Clichy-Echecs-92">AFRAOUI&nbsp;Anaelle</a></td><td ><a title="Clichy-Echecs-92">1860R</a></td><td><a title="Clichy-Echecs-92">CadF</a></td><td><a title="Clichy-Echecs-92">FRA</a></td><td><a title="Clichy-Echecs-92">IDF</a></td><td><a title="Clichy-Echecs-92">4</a></td><td><a title="Clichy-Echecs-92">33</a></td><td><a title="Clichy-Echecs-92">1760</a></td>	<td align="right">-100</td>
 </tr>
@@ -159,7 +159,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 	<center>
 	<table border='0' cellpadding='2' cellspacing='0' bordercolor='#000000'>
 		<tr class="gad-ss-titre">	<td colspan=50 align=center>Echiquier Orangeois</td></tr>		<tr class="gad-ss-titre">	<td> </td>	<td> </td>	<td> </td>	<td>2</td>	<td>&nbsp;</td>	<td>MEUNIER&nbsp;Clement</td>	<td>2280R</td>	<td>CadM</td>	<td>FRA</td>	<td>PRO</td>	<td>7</td>	<td>41.5</td>	<td>2364</td><td></td></tr>
-		<tr class="gad-gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
+		<tr class="gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
 </tr>
 		<tr class="gad-fon"><td > 1 </td><td> &#x25FB; </td><td >Gagn&eacute;</td><td><a title="Paris Jeunes Echecs">24</a></td><td><a title="Paris Jeunes Echecs">&nbsp;</a></td><td><a title="Paris Jeunes Echecs">DENJOY&nbsp;Arnaud</a></td><td ><a title="Paris Jeunes Echecs">1840R</a></td><td><a title="Paris Jeunes Echecs">JunM</a></td><td><a title="Paris Jeunes Echecs">FRA</a></td><td><a title="Paris Jeunes Echecs">IDF</a></td><td><a title="Paris Jeunes Echecs">4</a></td><td><a title="Paris Jeunes Echecs">33&frac12;</a></td><td><a title="Paris Jeunes Echecs">1908</a></td>	<td align="right">+68</td>
 </tr>
@@ -212,7 +212,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 	<center>
 	<table border='0' cellpadding='2' cellspacing='0' bordercolor='#000000'>
 		<tr class="gad-ss-titre">	<td colspan=50 align=center>U.S.Villejuif Echecs</td></tr>		<tr class="gad-ss-titre">	<td> </td>	<td> </td>	<td> </td>	<td>3</td>	<td>f</td>	<td>MIRIMANIAN&nbsp;Hayk</td>	<td>2260R</td>	<td>JunM</td>	<td>FRA</td>	<td>IDF</td>	<td>7</td>	<td>41.5</td>	<td>2362</td><td></td></tr>
-		<tr class="gad-gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
+		<tr class="gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
 </tr>
 		<tr class="gad-fon"><td > 1 </td><td> &#x25FB; </td><td >Gagn&eacute;</td><td><a title="Cavalier Bleu Drancy">6</a></td><td><a title="Cavalier Bleu Drancy">&nbsp;</a></td><td><a title="Cavalier Bleu Drancy">OHANOV&nbsp;David</a></td><td ><a title="Cavalier Bleu Drancy">1840R</a></td><td><a title="Cavalier Bleu Drancy">JunM</a></td><td><a title="Cavalier Bleu Drancy">ARM</a></td><td><a title="Cavalier Bleu Drancy">IDF</a></td><td><a title="Cavalier Bleu Drancy">6</a></td><td><a title="Cavalier Bleu Drancy">31&frac12;</a></td><td><a title="Cavalier Bleu Drancy">1973</a></td>	<td align="right">+133</td>
 </tr>
@@ -265,7 +265,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 	<center>
 	<table border='0' cellpadding='2' cellspacing='0' bordercolor='#000000'>
 		<tr class="gad-ss-titre">	<td colspan=50 align=center>Lutèce Echecs</td></tr>		<tr class="gad-ss-titre">	<td> </td>	<td> </td>	<td> </td>	<td>4</td>	<td>f</td>	<td>RODRIGUEZ&nbsp;Adrien</td>	<td>2200R</td>	<td>CadM</td>	<td>FRA</td>	<td>IDF</td>	<td>7</td>	<td>39</td>	<td>2288</td><td></td></tr>
-		<tr class="gad-gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
+		<tr class="gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
 </tr>
 		<tr class="gad-fon"><td > 1 </td><td> &#x25FB; </td><td >Gagn&eacute;</td><td><a title="C.E. de  Bois-Colombes">17</a></td><td><a title="C.E. de  Bois-Colombes">&nbsp;</a></td><td><a title="C.E. de  Bois-Colombes">GUERLACH&nbsp;Keigo</a></td><td ><a title="C.E. de  Bois-Colombes">1820R</a></td><td><a title="C.E. de  Bois-Colombes">CadM</a></td><td><a title="C.E. de  Bois-Colombes">FRA</a></td><td><a title="C.E. de  Bois-Colombes">IDF</a></td><td><a title="C.E. de  Bois-Colombes">4&frac12;</a></td><td><a title="C.E. de  Bois-Colombes">35</a></td><td><a title="C.E. de  Bois-Colombes">1917</a></td>	<td align="right">+97</td>
 </tr>
@@ -318,7 +318,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 	<center>
 	<table border='0' cellpadding='2' cellspacing='0' bordercolor='#000000'>
 		<tr class="gad-ss-titre">	<td colspan=50 align=center>Clichy-Echecs-92</td></tr>		<tr class="gad-ss-titre">	<td> </td>	<td> </td>	<td> </td>	<td>5</td>	<td>f</td>	<td>KAMBRATH&nbsp;Yannick</td>	<td>2270R</td>	<td>JunM</td>	<td>FRA</td>	<td>IDF</td>	<td>6</td>	<td>39</td>	<td>2226</td><td></td></tr>
-		<tr class="gad-gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
+		<tr class="gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
 </tr>
 		<tr class="gad-fon"><td > 1 </td><td> &#x25FC; </td><td >Gagn&eacute;</td><td><a title="L'Echiquier Chellois">33</a></td><td><a title="L'Echiquier Chellois">&nbsp;</a></td><td><a title="L'Echiquier Chellois">NOBLECOURT&nbsp;Nicolas</a></td><td ><a title="L'Echiquier Chellois">1840R</a></td><td><a title="L'Echiquier Chellois">JunM</a></td><td><a title="L'Echiquier Chellois">FRA</a></td><td><a title="L'Echiquier Chellois">IDF</a></td><td><a title="L'Echiquier Chellois">3</a></td><td><a title="L'Echiquier Chellois">29</a></td><td><a title="L'Echiquier Chellois">1673</a></td>	<td align="right">-167</td>
 </tr>
@@ -371,7 +371,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 	<center>
 	<table border='0' cellpadding='2' cellspacing='0' bordercolor='#000000'>
 		<tr class="gad-ss-titre">	<td colspan=50 align=center>Cavalier Bleu Drancy</td></tr>		<tr class="gad-ss-titre">	<td> </td>	<td> </td>	<td> </td>	<td>6</td>	<td>&nbsp;</td>	<td>OHANOV&nbsp;David</td>	<td>1840R</td>	<td>JunM</td>	<td>ARM</td>	<td>IDF</td>	<td>6</td>	<td>31.5</td>	<td>1973</td><td></td></tr>
-		<tr class="gad-gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
+		<tr class="gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
 </tr>
 		<tr class="gad-fon"><td > 1 </td><td> &#x25FC; </td><td >Perdu</td><td><a title="U.S.Villejuif Echecs">3</a></td><td><a title="U.S.Villejuif Echecs">f</a></td><td><a title="U.S.Villejuif Echecs">MIRIMANIAN&nbsp;Hayk</a></td><td ><a title="U.S.Villejuif Echecs">2260R</a></td><td><a title="U.S.Villejuif Echecs">JunM</a></td><td><a title="U.S.Villejuif Echecs">FRA</a></td><td><a title="U.S.Villejuif Echecs">IDF</a></td><td><a title="U.S.Villejuif Echecs">7</a></td><td><a title="U.S.Villejuif Echecs">41&frac12;</a></td><td><a title="U.S.Villejuif Echecs">2362</a></td>	<td align="right">+102</td>
 </tr>
@@ -424,7 +424,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 	<center>
 	<table border='0' cellpadding='2' cellspacing='0' bordercolor='#000000'>
 		<tr class="gad-ss-titre">	<td colspan=50 align=center>Tremblay en France</td></tr>		<tr class="gad-ss-titre">	<td> </td>	<td> </td>	<td> </td>	<td>7</td>	<td>&nbsp;</td>	<td>MSELLEK&nbsp;Ilyass</td>	<td>2420R</td>	<td>CadM</td>	<td>FRA</td>	<td>IDF</td>	<td>5.5</td>	<td>44</td>	<td>2224</td><td></td></tr>
-		<tr class="gad-gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
+		<tr class="gad-entete"><td>Rd</td><td> </td><td> </td><td>Pl</td><td>t</td><td>Nom</td><td>Rapide</td><td>Cat</td><td>Fede</td><td>Ligue</td><td>Pts</td><td>Tr</td><td>Perf</td>	<td>&nbsp;Diff&nbsp;</td>
 </tr>
 		<tr class="gad-fon"><td > 1 </td><td> &#x25FC; </td><td >Gain (F)</td><td><a title="Yerres-Roi">38</a></td><td><a title="Yerres-Roi">&nbsp;</a></td><td><a title="Yerres-Roi">LI&nbsp;Victor</a></td><td ><a title="Yerres-Roi">1890R</a></td><td><a title="Yerres-Roi">CadM</a></td><td><a title="Yerres-Roi">FRA</a></td><td><a title="Yerres-Roi">IDF</a></td><td><a title="Yerres-Roi">0</a></td><td><a title="Yerres-Roi">24&frac12;</a></td><td><a title="Yerres-Roi">0</a></td>	<td align="right">-1890</td>
 </tr>
@@ -2086,7 +2086,7 @@ cadence 5 min + 2 sec , 17 Octobre 2015</div>
 <OPTION VALUE="autre" > Autre : 
 <?php
 include("_connect.php");
-$requete_fiche=mysqli_query ($link,"SELECT * FROM couleur ORDER BY ORD DESC");
+$requete_fiche=mysqli_query ($link,"SELECT * FROM gad_color ORDER BY ORD DESC");
 while ($row=mysqli_fetch_array($requete_fiche) ) 
 {
 ?>

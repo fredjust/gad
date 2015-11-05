@@ -179,7 +179,7 @@ function couleur($couleur,$facteur) {
 				<td STYLE="background-color:#<?php echo $row['RVB']?>;" >
 			<SELECT NAME="rvb">
 				<?php
-				$requete_fiche=mysqli_query ($link,"SELECT * FROM couleur ORDER BY ORD DESC");
+				$requete_fiche=mysqli_query ($link,"SELECT * FROM gad_color ORDER BY ORD DESC");
 				while ($rowc=mysqli_fetch_array($requete_fiche) ) 
 				{
 					$isselect='';
