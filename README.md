@@ -9,13 +9,13 @@ http://www.echecs95.com/gad/
 
 voir le répertoire \doc
 
-** install.md **
+**install.md**  
 comment installer sur votre serveur
 
-** files.md **
+**files.md**  
 role de chaque fichier
 
-** todo.md **
+**todo.md**  
 idées et choses a faire
 
 
