@@ -76,7 +76,7 @@ if ($row[6]=='') {$coultext='000000';} else {$coultext='FFFFFF';};
 <tr>
 <td><?php if ($row['EFF']==0) {  ?><a href='deletegad.php?id_t=<?php echo $row[0]?>' TITLE='Effacer les lignes !'><img src='img/del.png'></a><?php } ?></td>
 <td><?php echo $row[0]?></td>
-<td ><a href='html/gad<?php echo $row[0]?>.html' target="_blanck"><?php echo $row[1]?></a></td>
+<td ><a href='html/gad<?php echo $row[0]?>.html' target="_blank"><?php echo $row[1]?></a></td>
 <td STYLE="background-color:#<?php echo $row[6]?>; color:#<?php echo $coultext?>;" align='center'><?php echo $row['VER']?></td>
 <td align='center'><?php echo $row['MAJ']?></td>
 <td align='right'><?php echo $row['NBJ_T']?></td>
