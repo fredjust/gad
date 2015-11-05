@@ -196,13 +196,29 @@ function couleur($couleur,$facteur) {
 		}
 	?>
 	<tr><td>En cas de changements  </td><td><input type="submit" value="Enregistrer les modifications" /></td></tr>
-	</table>			
+			
 	</form>
+	<tr><td>
+	après avoir modifié les informations précédentes,<br>
+	vous pouvez générer et afficher la GAD en cliquant sur le bouton suivant<br>
+	<br><i>
+	Cela ouvrira une nouvelle fenetre avec votre grille<br>
+	vous pouvez revenir ici pour modifier des options et la regénérer<br>
+	Actualiser alors cette nouvelle fenetre en appuyant sur F5 pour voir vos modifications<br>
+	</i>
+	</td><td>
+		<input type="button" onclick="window.open('05makegad.php?id_t=<?php echo $id_t?>&rvb=<?php echo $row['RVB']?>&force=1','gad','height=500,width=1000,top=100,left=100,location=no');" value="Générer et afficher la grille dynamique"><br>
+	
+	
+	</td></tr>
+	</table>
+	<br>
+	<b>INFORMATIONS SUPPLEMENTAIRES EN OPTION</b><br>
 	<hr>
 	<form enctype="multipart/form-data" action="saveclassement.php" method="post">
 		<input type="hidden" name="MAX_FILE_SIZE" value="512000" />
 		<input type="hidden" name="id_t" value="<?php echo $id_t?>" />
-		Si vous voulez afficher les clubs des joueurs, vous pouvez envoyer le fichier HTML du classement pour se tournoi<br>
+		Si vous voulez afficher les clubs des joueurs, vous pouvez envoyer le fichier HTML du classement pour ce tournoi<br>
 		<br>
 		LE CLASSEMENT : <input name="nomfichier" type="file" />  <input type="submit" value="Importer" /><br>
 	</form>
@@ -235,13 +251,6 @@ function couleur($couleur,$facteur) {
 			
 				</form>
 	<hr>
-	après avoir modifié les informations précédentes, vous pouvez générer et atteindre la GAD en cliquant sur le bouton suivant<br>
-	<br>
-	<input type="button" onclick="window.open('05makegad.php?id_t=<?php echo $id_t?>&rvb=<?php echo $row['RVB']?>&force=1','gad','height=500,width=1000,top=100,left=100,location=no');" value="Générer la grille dynamique"><br>
-	Cela ouvrira une nouvelle fenetre avec votre grille<br>
-	vous pouvez revenir ici pour modifier des options et la regénérer<br>
-	Actualiser alors cette nouvelle fenetre en appuyant sur F5 pour voir vos modifications<br>
-	<br>
-	
+	Afficher les variations du Elo FIDE (en préparation ...)
 </body>
 </html>
