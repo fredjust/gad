@@ -14,3 +14,9 @@ tout est sur https://github.com/fredjust/gad
 * dans le fichier _connect.php
 * dans le fichier 00admin.php
 
+## importer une grille
+* accéder à l'index du site
+* cliquer sur Dynamiser une grille
+* envoyer la grille GaTest.html
+* parametrer les options et cliquer sur générer la grille
+

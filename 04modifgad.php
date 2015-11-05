@@ -237,7 +237,11 @@ function couleur($couleur,$facteur) {
 	<hr>
 	après avoir modifié les informations précédentes, vous pouvez générer et atteindre la GAD en cliquant sur le bouton suivant<br>
 	<br>
-	<input type="button" onclick="window.location='05makegad.php?id_t=<?php echo $id_t?>&rvb=<?php echo $row['RVB']?>&force=1';" value="Générer la grille dynamique">
+	<input type="button" onclick="window.open('05makegad.php?id_t=<?php echo $id_t?>&rvb=<?php echo $row['RVB']?>&force=1','gad','height=500,width=1000,top=100,left=100,location=no');" value="Générer la grille dynamique"><br>
+	Cela ouvrira une nouvelle fenetre avec votre grille<br>
+	vous pouvez revenir ici pour modifier des options et la regénérer<br>
+	Actualiser alors cette nouvelle fenetre en appuyant sur F5 pour voir vos modifications<br>
+	<br>
 	
 </body>
 </html>
