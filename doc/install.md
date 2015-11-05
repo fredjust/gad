@@ -4,8 +4,8 @@
 tout est sur https://github.com/fredjust/gad  
 
 ## créer les tables dans la base SQL  
-* dans le rep SQL exécuter les fichiers SQL*
-* exécuter
+* dans le rep SQL exécuter les fichiers SQL
+* importer
 	* gad_files
 	* gad_data
 	* gad_color
