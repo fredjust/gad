@@ -59,7 +59,19 @@ while ($row=mysqli_fetch_array($requete_fiche) )
 ?>
 <tr>
 <td STYLE="background-color:#<?php echo $row[6]?>; color:#FFFFFF;" ><?php echo $row[0]?></td>
-<td ><a href='html/gad<?php echo $row[0]?>.html' target="_blank"><?php echo $row[1]?></a></td>
+<td ><a href='html/gad<?php echo $row[0]?>.html' target="_blank"><?php echo $row[1]?></a><br>
+	<?php
+	$i=1;
+	while (file_exists('html/gad'.$row[0].'_'.$i.'.html')) { ?>
+			<a href="html/gad<?php echo $row[0]?>_<?php echo $i?>.html" target=blank> copie <?php echo $i?> </a>
+<?php
+		$i++;
+		}
+	?>
+
+
+
+</td>
 <td STYLE="background-color:#<?php echo $row[6]?>; color:#FFFFFF;" align='center'><?php echo $row['VER']?></td>
 <td> <?php echo $row['MAJ']?></td>
 <td align="right"> <?php echo $row['NBJ_T']?></td>
