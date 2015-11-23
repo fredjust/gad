@@ -260,6 +260,28 @@ function couleur($couleur,$facteur) {
 					LE CLASSEMENT : <input name="nomfichier" type="file" />  <input type="submit" value="Importer" /><br>
 				</form>
 	<hr>
+	<b>CRER UNE COPIE DE CETTE GRILLE</b><br>
+	Cela permet d'obtenir différentes versions d'une même grille<br>
+	Une pour tous et une pour un club particulier avec ses joueurs surlignés<br>
+	La grille actuelle sera dupliquée, pensez a remodifier les options pour la grille générale<br>
+	Copies existantes de cette grille :<br>
+	<ul>
+		<?php
+		$i=1;
+		while (file_exists('html/gad'.$id_t.'_'.$i.'.html')) {
+			?>
+			<li> <a href="html/gad<?php echo $id_t?>_<?php echo $i?>.html" target=blank>gad<?php echo $id_t?>_<?php echo $i?>.html</a>
+
+			<?php
+			$i++;
+		}
+		?>
+	</ul>
+	<form action="06copygad.php" method="post">
+		<input type="hidden" name="id_t" value="<?php echo $id_t?>" />		
+		<input type="submit" value="Créer une copie" />
+	</form>
+	<hr>
 	Afficher les variations du Elo FIDE (en préparation ...)
 </body>
 </html>
