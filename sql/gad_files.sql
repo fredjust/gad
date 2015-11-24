@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `gad_files` (
   `NBJ_T` int(11) DEFAULT NULL,
   `MAJ` date DEFAULT NULL,
   `RVB` varchar(50) DEFAULT NULL,
-  `JAS` varchar(50) DEFAULT NULL,
+  `JAS` varchar(255) DEFAULT NULL,
   `VER` varchar(5) DEFAULT NULL,
   `EFF` int(1) NOT NULL DEFAULT '0',
   `Grille` varchar(255) DEFAULT NULL,
