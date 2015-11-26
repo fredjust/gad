@@ -62,6 +62,7 @@ Liste des grilles version > 2.20
 <td>Nom</td>
 <td>Version</td>
 <td>Import </td>
+<td>Dép </td>
 <td>Joueurs </td>
 <td> </td>
 
@@ -79,6 +80,7 @@ if ($row[6]=='') {$coultext='000000';} else {$coultext='FFFFFF';};
 <td ><a href='html/gad<?php echo $row[0]?>.html' target="_blank"><?php echo $row[1]?></a></td>
 <td STYLE="background-color:#<?php echo $row[6]?>; color:#<?php echo $coultext?>;" align='center'><?php echo $row['VER']?></td>
 <td align='center'><?php echo $row['MAJ']?></td>
+<td align='right'><?php echo $row['dep']?></td>
 <td align='right'><?php echo $row['NBJ_T']?></td>
 <td>
 <?php if ($row['EFF']==0) {  ?><a href='04modifgad.php?id_t=<?php echo $row[0]?>'>Modifier</a><?php } else { ?> 

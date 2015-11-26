@@ -49,6 +49,7 @@ Liste des grilles américaines dynamiques</br>
 <td>Nom</td>
 <td>Version</td>
 <td> Date</td>
+<td> Dép</td>
 <td> joueurs</td>
 </tr>
 <?php
@@ -74,6 +75,7 @@ while ($row=mysqli_fetch_array($requete_fiche) )
 </td>
 <td STYLE="background-color:#<?php echo $row[6]?>; color:#FFFFFF;" align='center'><?php echo $row['VER']?></td>
 <td> <?php echo $row['MAJ']?></td>
+<td align="right"> <?php echo $row['dep']?></td>
 <td align="right"> <?php echo $row['NBJ_T']?></td>
 </tr>
 <?php
