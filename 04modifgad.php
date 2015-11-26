@@ -145,14 +145,15 @@ function couleur($couleur,$facteur) {
 				<br>Attention une grille avec cet identifiant existe déjà <br>
 				<input type="button" onclick="window.open('html/gad<?php echo $id_t?>.html','gad','height=500,width=1000,top=100,left=100,location=no');" value="Cette grille"> sera écrasée et remplacée si vous continuez !<br>
 				<br>
+
 			<?php 
 				}	
 			?>
 			Nombre de joueurs trouvés : <?php echo $row['NBJ_T']?></br>
 			Fichier d'origine : <a href="<?php echo $row['Grille']?>" TARGET=blank><?php echo $row['Grille']?></a><br>
 			<br>
-			Avant de générer la grille, vous pouvez modifier les zones suivantes<br>
-			<bR>
+			<b>AVANT DE GENERER LA GRILLE, vous pouvez modifier les zones suivantes</b><br>		
+			<hr>
 			<table>		
 			<tr>
 				<td>Titre de la grille américaine : </td>
@@ -195,7 +196,9 @@ function couleur($couleur,$facteur) {
 			<?php		
 		}
 	?>
-	<tr><td>En cas de changements  </td><td><input type="submit" value="Enregistrer les modifications" /></td></tr>
+	<tr><td>En cas de changements  </td><td><input type="submit" value="Enregistrer les modifications" /> 
+
+	</td></tr>
 			
 	</form>
 	<tr><td>
@@ -208,8 +211,18 @@ function couleur($couleur,$facteur) {
 	en appuyant sur F5 pour voir vos modifications<br>
 	</i>
 	</td><td align=center STYLE="background-color:#<?php echo $rvb1?>">
+		<?php if ($gadfile!=1) { ?>
+				<span style="color: red; font-weight: bold;">La grille n'a pas encore été générée !<br></span>
+
+			<?php 
+				}	
+			?>
+
+
 		<input type="button" onclick="window.open('05makegad.php?id_t=<?php echo $id_t?>&rvb=<?php echo $row['RVB']?>&force=1','gad','height=500,width=1000,top=100,left=100,location=no');" value="Générer et afficher la grille dynamique"><br>
-	
+	<?php if ($modif!=0) {?>
+		<span style="color: red; font-weight: bold;">Des modifications ont eu lieu !<br>Vous devez générez la grille <br>pour voir vos derniers changements</span>
+		<?php } ?>
 	
 	</td></tr>
 	</table>
@@ -242,7 +255,7 @@ function couleur($couleur,$facteur) {
 						}
 						?> 
 						</SELECT>
-						soient <input type="submit" value="Surligner" /> 
+						soient <input type="submit" value="Surligner" /> <i>Générer la grille en cas de changement</i>
 						<?php 
 					}
 				}
@@ -260,11 +273,11 @@ function couleur($couleur,$facteur) {
 					LE CLASSEMENT : <input name="nomfichier" type="file" />  <input type="submit" value="Importer" /><br>
 				</form>
 	<hr>
-	<b>CRER UNE COPIE DE CETTE GRILLE</b><br>
+	<b>CREER UNE COPIE DE CETTE GRILLE</b><br>
 	Cela permet d'obtenir différentes versions d'une même grille<br>
 	Une pour tous et une pour un club particulier avec ses joueurs surlignés<br>
-	La grille actuelle sera dupliquée, pensez a remodifier les options pour la grille générale<br>
-	Copies existantes de cette grille :<br>
+	<a href="html/gad<?php echo $id_t?>.html" target=blank>La grille actuelle</a> sera dupliquée, pensez a remodifier les options pour la grille principale<br>
+	Copies existantes :
 	<ul>
 		<?php
 		$i=1;
