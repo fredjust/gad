@@ -10,6 +10,9 @@ ACTIONS DE LA PAGE
 - redirige vers importation.php si tout est OK
 *********************************************************************************/
 
+$dep="NN";
+if (isset($_POST['dep']))  { $dep =$_POST['dep']; };
+
 $dossier = 'papi/';
 
 $fichier = basename($_FILES['nomfichier']['name']);
@@ -50,7 +53,7 @@ if(!isset($erreur)) //S'il n'y a pas d'erreur, on upload
 	    mail($mail,$sujet,$corp_message,$headers);
 	 */
 	
-	header("Location: 03importation.php?nomfichier=$fichier");
+	header("Location: 03importation.php?nomfichier=$fichier&dep=$dep");
 	
      
      }

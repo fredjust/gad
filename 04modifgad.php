@@ -21,6 +21,7 @@ if (isset($_GET['dev']))  { $dev =$_GET['dev']; $_SESSION["dev"]=$dev; };
 $id_t=0;
 $modif=0;
 $rvb='AA0000';
+$dep="";
 
 $ipvisit=$_SERVER["REMOTE_ADDR"];
 
@@ -35,7 +36,9 @@ if (isset($_REQUEST['desc']))  { $desc=addslashes($_REQUEST['desc']); };
 if (isset($_REQUEST['rvb']))  { $rvb =$_REQUEST['rvb']; };
 if (isset($_REQUEST['jas']))  { $jas =$_REQUEST['jas']; };
 if (isset($_REQUEST['club']))  { $club =addslashes($_REQUEST['club']); };
+if (isset($_REQUEST['dep']))  { $dep =$_REQUEST['dep']; };
 if (isset($_REQUEST['modif']))  { $modif =$_REQUEST['modif']; };
+
 
 /******************************************************************************
 MODIFICATION
@@ -58,6 +61,13 @@ if($modif==1) {
 
 if($modif==2) {
 	$query="UPDATE gad_files SET CAS='$club' WHERE ID_T=$id_t $andIP";
+	if (!mysqli_query($link,$query)) {		
+		ECHO 'Erreur lors de <br>'.$query;
+	}
+}
+
+if($modif==3) {
+	$query="UPDATE gad_files SET dep='$dep' WHERE ID_T=$id_t $andIP";
 	if (!mysqli_query($link,$query)) {		
 		ECHO 'Erreur lors de <br>'.$query;
 	}
@@ -128,6 +138,7 @@ function couleur($couleur,$facteur) {
 		{
 			$ver_use=0;
 			$ver_use=$row['VER'];
+			$dep=$row['dep'];
 			$rvb=$row['RVB'];
 			$rvb1=couleur($rvb,0.7);
 			$rvb2=couleur($rvb,0.9);
@@ -296,5 +307,20 @@ function couleur($couleur,$facteur) {
 	</form>
 	<hr>
 	Afficher les variations du Elo FIDE (en préparation ...)
+	<hr>
+	<?php if ($_SESSION['ydh437']=='oui') { ?>
+	<form action="04modifgad.php" method="post">		
+		<input type="hidden" name="id_t" value="<?php echo $row['ID_T']?>" />
+		<input type="hidden" name="modif" value="3" />
+		Modification du département : 
+		<input type="text" name="dep" value="<?php echo $dep ?>" size="2" maxlength="2" /> 
+		<input type="submit" value="Changer" /> 
+	</form>
+
+	<?php 
+		}
+	?>
+
+
 </body>
 </html>
