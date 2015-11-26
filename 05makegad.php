@@ -80,6 +80,19 @@ if ($row=mysqli_fetch_assoc($requete_fiche))
 	$DESC_T=$row['DESC_T'];	
 	$cas=$row['CAS'];
 	$jas=explode(",",$row['JAS']);
+
+	for ($njas=0; $njas<count($jas); $njas++) {
+		$pos=strpos($jas[$njas],"-"); 
+		if ($pos>0) { //si c'est un interval type 1-20
+			$debut=substr($jas[$njas],0,$pos);
+			$fin=substr($jas[$njas], $pos+1);
+			for ($naj=$debut;$naj<=$fin;$naj++) {
+				$jas[]=$naj;	
+			}				
+		}			
+	}
+
+	
 	
 	//SI une couleur existe dans la base
 	if ($row['RVB']<>'') {
