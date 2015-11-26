@@ -81,23 +81,6 @@ while ($row=mysqli_fetch_array($requete_fiche) )
 /***************************************************************************************/
 ?>
 
-<?php
-include("_connect.php");
-$requete_fiche=mysqli_query ($link,"SELECT * FROM ga_tournois WHERE VER<>'' ORDER BY ID_T DESC LIMIT 0,50");
-while ($row=mysqli_fetch_array($requete_fiche) ) 
-{
-?>
-<tr>
-<td STYLE="background-color:#<?php echo $row[6]?>; color:#FFFFFF;" ><?php echo $row[0]?></td>
-<td ><a href='html/gad<?php echo $row[0]?>.html' target="_blanck"><?php echo $row[1]?></a></td>
-<td STYLE="background-color:#<?php echo $row[6]?>; color:#FFFFFF;" align='center'><?php echo $row['VER']?></td>
-<td> <?php echo $row['MAJ']?></td>
-<td align="right"> <?php echo $row['NBJ_T']?></td>
-</tr>
-<?php
-}
-
-?>
 </table>
 </body>
 </html>

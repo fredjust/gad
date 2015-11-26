@@ -173,7 +173,7 @@ function couleur($couleur,$facteur) {
 				<td>Places des joueurs à surligner séparées par des virgules :<br>
 				(Laisser vide si vous ne voulez surligner personne)
 				</td>
-				<td><input type="text" name="jas" value="<?php echo $row[7]?>" size="30" /> exemple: 2,5,13,24</td>
+				<td><input type="text" name="jas" value="<?php echo $row[7]?>" size="30" /> exemple: 1-5,7,13-17,24</td>
 			</tr>
 			<tr>
 				<td>Couleur de la grille : </td>
