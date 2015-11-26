@@ -54,7 +54,7 @@ if ($_SESSION['ydh437']=='oui') {
 </ul>
 <br>
 
-Liste des grilles version > 2.20 
+Liste des grilles 
 <table>
 <tr>
 <td></td>
