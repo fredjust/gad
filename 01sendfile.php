@@ -21,9 +21,12 @@ ACTIONS DE LA PAGE
 		<br>
 		<input name="nomfichier" type="file" /><br>  
 		<br>
+		Indiquer le département pour faciliter le classement : 
+		<input type="text" name="dep" value="" size="2" maxlength="2" /><br>
+		<br>
 		<input type="submit" value="Importer la grille" /><br>
 	</form>
 	<br>
-	Si la grille se trouve déjà en ligne vous pouvez simplement la dynamiser en <a href='01sendurl.php'>indiquant son URL sur cette page</a>
+	
 </body>
 </html>

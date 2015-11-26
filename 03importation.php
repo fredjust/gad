@@ -32,11 +32,14 @@ $valTitre='';
 $mode=0; 
 $debut=0;
 $fin=0;
+$dep=""; //département de la grille
 
 // mode développement 
 $dev=0; //variable =1 si on est en développement 
 if (isset($_SESSION['dev']))  { $dev =$_SESSION['dev']; }; 
 if (isset($_GET['dev']))  { $dev =$_GET['dev']; $_SESSION["dev"]=$dev; };
+
+if (isset($_GET['dep']))  { $dep =$_GET['dep']; };
 
 /******************************************************************************
 							D OU ON VIENT
@@ -176,7 +179,7 @@ function date_fr($format = 'l j F Y', $time = null){
 	$description=addslashes($description);		
 	$datemaj=date("Y-m-d");
 	$ipvisit=$_SERVER["REMOTE_ADDR"];
-	$query="INSERT INTO gad_files (NOM_T,DESC_T,COL_T,MAJ,RVB,Grille,IP) values ('$valTitre','$description','$EnteteColonne','$datemaj','AA0000','$nomfichier','$ipvisit')";
+	$query="INSERT INTO gad_files (NOM_T,DESC_T,COL_T,MAJ,RVB,Grille,IP,dep) values ('$valTitre','$description','$EnteteColonne','$datemaj','AA0000','$nomfichier','$ipvisit','$dep')";
 	if (mysqli_query($link,$query)===TRUE) {
 		//echo ' OK </br>';
 	} else {		
